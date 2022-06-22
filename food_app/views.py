@@ -12,4 +12,4 @@ class FoodViewSet(viewsets.ModelViewSet):
             'food',
             queryset=Food.objects.filter(is_publish=True),
         ),
-    )
+    ).distinct()
